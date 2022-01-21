@@ -2,7 +2,7 @@
 <Container version="2">
     <Name>KitchenOwl</Name>
     <Overview>
-    This is the Description of the Container. Coming Soon...
+    This is a Template for KitchenOwl.
     </Overview>
     <Registry>https://registry.hub.docker.com/u/tombursch/kitchenowl/</Registry>
     <Repository>tombursch/kitchenowl</Repository>
