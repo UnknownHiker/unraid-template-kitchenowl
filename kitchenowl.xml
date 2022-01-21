@@ -10,8 +10,8 @@
     <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
     <Network default="host">bridge</Network>
     <Icon>https://github.com/TomBursch/kitchenowl/blob/main/assets/icon/icon.png</Icon>
-    <Category>Productivity Status:Beta</Category>
-    <Config>
+    <Category>Productivity: Status:Beta</Category>
+    <Config
         Type="Path"
         Name="Path /data"
         Target="/data"
@@ -20,7 +20,7 @@
         Description="This is where the KitchenOwl Database is stored."
         Required="true">/mnt/user/appdata/kitchenowl
     </Config>
-    <Config>
+    <Config
         Type="Port"
         Name="KitchenOwl Service"
         Target="5000"
