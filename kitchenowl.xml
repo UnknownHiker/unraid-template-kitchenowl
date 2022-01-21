@@ -9,7 +9,7 @@
     <Privileged>false</Privileged>
     <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
     <Network default="host">bridge</Network>
-    <Icon>https://github.com/TomBursch/kitchenowl/blob/main/assets/icon/icon.png<Icon>
+    <Icon>https://github.com/TomBursch/kitchenowl/blob/main/assets/icon/icon.png</Icon>
     <Category>Productivity Status:Beta</Category>
     <Config>
         Type="Path"
