@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container version="2">
+    <Name>KitchenOwl</Name>
+    <Overview>
+    This is the Description of the Container. Coming Soon...
+    </Overview>
+    <Registry>https://registry.hub.docker.com/u/tombursch/kitchenowl/</Registry>
+    <Repository>tombursch/kitchenowl</Repository>
+    <Privileged>false</Privileged>
+    <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
+    <Network default="host">bridge</Network>
+    <Icon>https://github.com/TomBursch/kitchenowl/blob/main/assets/icon/icon.png<Icon>
+    <Category>Productivity Status:Beta</Category>
+    <Config>
+        Type="Path"
+        Name="Path /data"
+        Target="/data"
+        Default="/mnt/user/appdata/kitchenowl"
+        Mode="rw"
+        Description="This is where the KitchenOwl Database is stored."
+        Required="true">/mnt/user/appdata/kitchenowl
+    </Config>
+    <Config>
+        Type="Port"
+        Name="KitchenOwl Service"
+        Target="5000"
+        Default="5000"
+        Mode="tcp"
+        Description="KitchenOwl Service Port"
+        Display="always"
+        Required="true">5000
+    </Config>
+</Container>
