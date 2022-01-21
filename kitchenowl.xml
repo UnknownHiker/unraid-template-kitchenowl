@@ -11,23 +11,6 @@
     <Network default="host">bridge</Network>
     <Icon>https://github.com/TomBursch/kitchenowl/blob/main/assets/icon/icon.png</Icon>
     <Category>Productivity: Status:Beta</Category>
-    <Config
-        Type="Path"
-        Name="Path /data"
-        Target="/data"
-        Default="/mnt/user/appdata/kitchenowl"
-        Mode="rw"
-        Description="This is where the KitchenOwl Database is stored."
-        Required="true">/mnt/user/appdata/kitchenowl
-    </Config>
-    <Config
-        Type="Port"
-        Name="KitchenOwl Service"
-        Target="5000"
-        Default="5000"
-        Mode="tcp"
-        Description="KitchenOwl Service Port"
-        Display="always"
-        Required="true">5000
-    </Config>
+    <Config Type="Path" Name="Path /data" Target="/data" Default="/mnt/user/appdata/kitchenowl" Mode="rw" Description="This is where the KitchenOwl Database is stored." Required="true">/mnt/user/appdata/kitchenowl</Config>
+    <Config Type="Port" Name="KitchenOwl Service" Target="5000" Default="5000" Mode="tcp" Description="KitchenOwl Service Port" Display="always" Required="true">5000</Config>
 </Container>
