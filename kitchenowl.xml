@@ -2,8 +2,10 @@
 <Container version="2">
     <Name>KitchenOwl</Name>
     <Overview>KitchenOwl is a self-hosted grocery list and recipe manager. The backend is made with Flask and the frontend with Flutter. Easily add items to your shopping list before you go shopping. You can also create recipes and add items based on what you want to cook.</Overview>
+    <Changes>- 22.01.2021: added Project link and config entry for connecting to kitchenowl-web (which i couldnt get running yet)</Changes>
     <Registry>https://hub.docker.com/r/tombursch/kitchenowl</Registry>
     <Repository>tombursch/kitchenowl</Repository>
+    <Project>https://tombursch.github.io/kitchenowl/</Project>
     <Privileged>false</Privileged>
     <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
     <Network default="host">bridge</Network>
@@ -11,4 +13,5 @@
     <Category>Productivity: Status:Beta</Category>
     <Config Type="Path" Name="Path /data" Target="/data" Default="/mnt/user/appdata/kitchenowl" Mode="rw" Description="This is where the KitchenOwl Database is stored." Required="true">/mnt/user/appdata/kitchenowl</Config>
     <Config Type="Port" Name="KitchenOwl Service" Target="5000" Default="5000" Mode="tcp" Description="KitchenOwl Service Port" Display="always" Required="true">5000</Config>
+    <Config Type="Variable" Name="Url for the Web Frontend (needs kitchenowl-web container)" Target="FRONT_URL" Default="FRONT_URL" Mode="" Description="Url for the Web Frontend (needs additional kitchenowl-web container)" Display="advanced" Required="false" Mask="false">http://localhost:8123</Config>
 </Container>

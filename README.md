@@ -14,6 +14,9 @@ Im NOT a developer of KitchenOwl, i just made this little Unraid Template.
 - Persistent Volume /data (includes Database)
 - Specify Host Port
 
+## Planned
+- Template for the UI Container (kitchenowl-web)
+
 ## Installation
 Just Install it Via Unraid Community Applications (not submitted yet, so for now just git clone it to /boot/config/plugins/dockerMan/templates of your Unraid installation, then you can Select it in the Docker Tab under Create -> Template) and point your Reverse Proxy to the local IP of your Server on Port 5000,
 or whatever Port you customized.
