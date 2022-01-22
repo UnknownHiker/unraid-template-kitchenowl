@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Container version="2">
     <Name>KitchenOwl</Name>
-    <Overview>KitchenOwl is a self-hosted grocery list and recipe manager. The backend is made with Flask and the frontend with Flutter. Easily add items to your shopping list before you go shopping. You can also create recipes and add items based on what you want to cook.</Overview>
+    <Overview>KitchenOwl Backend Server for use with the Mobile App (Container Template for WebUI coming soon). KitchenOwl is a self-hosted grocery list and recipe manager. The backend is made with Flask and the frontend with Flutter. Easily add items to your shopping list before you go shopping. You can also create recipes and add items based on what you want to cook.</Overview>
     <Date>2022-01-22</Date>
     <Changes>- 22.01.2021: added Project link and config entry for connecting to kitchenowl-web (which doesnt work yet)</Changes>
     <Registry>https://hub.docker.com/r/tombursch/kitchenowl</Registry>
