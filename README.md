@@ -22,7 +22,7 @@ Just Install it Via Unraid Community Applications (not submitted yet, so for now
 or whatever Port you customized.
 
 ## Improvements
-Feel free to open a Issue, an ill try to improve it when i have time :)
+Feel free to open a Issue, an ill try to improve it when i have time. :)
 
 ## LICENSE
 AGPL 3.0 like the main Project too.
