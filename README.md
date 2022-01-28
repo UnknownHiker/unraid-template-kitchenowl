@@ -1,7 +1,7 @@
 # unraid-template-kitchenowl
 
 ## Description
-This is an Unraid Docker Template for KitchenOwl.
+This is an Unraid Docker Template for KitchenOwl and the separate Web Frontend (KitchenOwl-Web).
 Use it at yout own Risk!
 
 ## Project
@@ -14,14 +14,23 @@ Im NOT a developer of KitchenOwl, i just made this little Unraid Template.
 - Persistent Volume /data (includes Database)
 - Specify Host Port
 - Optional Variable for Frontend Url (needs separate kitchenowl-web container, not working yet)
+- Now Supports WebUI (with seperate Container KitchenOwl-Web)
 
 ## Planned
-- Template for the UI Container (kitchenowl-web)
+- Nginx example config
 
-## Installation
-Just Install it Via Unraid Community Applications and point your Reverse Proxy to the local IP of your Server on Port 5000,
-or whatever Port you customized.
-Then you can connect the Mobile App with your Domain.
+## Backend Installation
+- Just Install it Via Unraid Community Applications and point your Reverse Proxy to the local IP of your Server on Port 5000, or whatever Port you customized.
+- Then you can connect the Mobile App with your Domain.
+
+- If you also want to use the WebUI, change the Parameter FRONT_URL from localhost (under more settings) to the local IP + Port where the KitchenOwl-Web Container is / will be running. This can be also changed later.
+
+## Web UI Installation
+- Install KitchenOwl-Web from Community Applications
+- Make sure to Change BACK_URL from localhost to the local IP + Port of your Server where the KitchenOwl Container is running.
+
+## Example NGINX configuration
+- coming soon.
 
 ## Improvements
 Feel free to open a Issue, an ill try to improve it when i have time. :)
