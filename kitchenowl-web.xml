@@ -17,5 +17,5 @@
 <Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png</Icon>
 <Category>Productivity: Status:Beta</Category>
 <Config Type="Port" Name="KitchenOwl UI" Target="80" Default="8123" Mode="tcp" Description="KitchenOwl UI Port" Display="always" Required="true">8123</Config>
-<Config Type="Variable" Name="Url to the Backend (needs kitchenowl container)" Target="BACK_URL" Default="http://localhost:5000" Mode="" Description="Url to the Backend (needs kitchenowl container)" Display="always" Required="true" Mask="false">http://localhost:5000</Config>
+<Config Type="Variable" Name="Url to the Backend (needs kitchenowl container)" Target="BACK_URL" Default="localhost:5000" Mode="" Description="Url to the Backend (needs kitchenowl container)" Display="always" Required="true" Mask="false">localhost:5000</Config>
 </Container>
