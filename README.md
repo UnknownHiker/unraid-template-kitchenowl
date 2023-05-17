@@ -13,7 +13,7 @@ Im NOT a developer of KitchenOwl, i just made this little Unraid Template.
 ## Features
 - Persistent Volume /data (includes Database)
 - Specify Host Port
-- Optional Variable for Frontend Url (needs separate kitchenowl-web container, not working yet)
+- Optional Variable for Frontend Url (needs separate kitchenowl-web container)
 - Now Supports WebUI (with seperate Container KitchenOwl-Web)
 
 ## Planned
