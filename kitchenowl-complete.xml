@@ -13,6 +13,7 @@
 <Privileged>true</Privileged>
 <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
 <Network default="host">bridge</Network>
+<ExtraParams>-v /var/run/docker.sock:/var/run/docker.sock</ExtraParams>
 <WebUI>http://[IP]:[PORT:8123]/</WebUI>
 <Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png</Icon>
 <Category>Productivity: Status:Beta</Category>
