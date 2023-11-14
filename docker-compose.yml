@@ -1,15 +1,16 @@
 version: "3"
+name: kitchenowl
 services:
   front:
+    container_name: kitchenowl-frontend
     image: tombursch/kitchenowl-web:latest
     restart: unless-stopped
-    # environment:
-    #   - BACK_URL=back:5000 # Change this if you rename the containers
     ports:
       - "${HOST_PORT}:80"
     depends_on:
       - back
   back:
+    container_name: kitchenowl-backend
     image: tombursch/kitchenowl:latest
     restart: unless-stopped
     environment:

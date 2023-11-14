@@ -6,9 +6,6 @@ RUN apk --no-cache add curl docker-compose
 
 WORKDIR /app
 
-# Expose port 80
-EXPOSE 80
-
 # Copy a Docker Compose file that defines the containers to run
 COPY docker-compose.yml /app/docker-compose.yml
 
