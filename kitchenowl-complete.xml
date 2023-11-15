@@ -17,6 +17,6 @@
 <WebUI>http://[IP]:[PORT:8123]/</WebUI>
 <Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png</Icon>
 <Category>Productivity: Status:Beta</Category>
-<Config Type="Variable" Name="Kitchenowl Data" Target="HOST_PATH" Default="" Mode="" Description="Url to the Host Path where you want to store the KitchenOwl Data" Display="always" Required="true" Mask="false"></Config>
-<Config Type="Variable" Name="Web Port" Target="HOST_Port" Default="8123" Mode="" Description="Host Port to use for the WebUI. Will be mapped to Container Port 80." Display="always" Required="true" Mask="false"></Config>
+<Config Type="Variable" Name="Kitchenowl Data" Target="HOST_PATH" Default="/mnt/user/appdata/kitchenowl" Mode="" Description="Url to the Host Path where you want to store the KitchenOwl Data" Display="always" Required="true" Mask="false">/mnt/user/appdata/kitchenowl</Config>
+<Config Type="Variable" Name="Web Port" Target="HOST_Port" Default="8123" Mode="" Description="Host Port to use for the WebUI. Will be mapped to Container Port 80." Display="always" Required="true" Mask="false">8123</Config>
 </Container>
