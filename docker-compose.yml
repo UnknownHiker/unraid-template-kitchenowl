@@ -4,9 +4,8 @@ services:
   front:
     container_name: kitchenowl-frontend
     image: tombursch/kitchenowl-web:latest
-    deploy:
-      labels:
-        net.unraid.docker.icon: "https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png"
+    labels:
+      - "net.unraid.docker.icon=https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png"
     restart: unless-stopped
     ports:
       - "${HOST_PORT}:80"
@@ -15,9 +14,8 @@ services:
   back:
     container_name: kitchenowl-backend
     image: tombursch/kitchenowl:latest
-    deploy:
-      labels:
-        net.unraid.docker.icon: "https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png"
+    labels:
+      - "net.unraid.docker.icon=https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png"
     restart: unless-stopped
     environment:
       - JWT_SECRET_KEY=PLEASE_CHANGE_ME
