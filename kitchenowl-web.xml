@@ -6,6 +6,8 @@
 <Changes>
 ## 28.01.2022
 - Initial Release
+## 01.06.24
+- Update requirements
 </Changes>
 <Registry>https://hub.docker.com/r/tombursch/kitchenowl-web</Registry>
 <Repository>tombursch/kitchenowl-web</Repository>
@@ -14,8 +16,9 @@
 <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
 <Network default="host">bridge</Network>
 <WebUI>http://[IP]:[PORT:8123]/</WebUI>
-<Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png</Icon>
+<Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/kitchenowl/assets/icon/icon.png</Icon>
 <Category>Productivity: Status:Stable</Category>
 <Config Type="Port" Name="KitchenOwl UI" Target="80" Default="8123" Mode="tcp" Description="KitchenOwl UI Port" Display="always" Required="true">8123</Config>
 <Config Type="Variable" Name="Url to the Backend (needs kitchenowl container)" Target="BACK_URL" Default="localhost:5000" Mode="" Description="Url to the Backend (needs kitchenowl container)" Display="always" Required="true" Mask="false">localhost:5000</Config>
+<Config Type="Variable" Name="JWT Secret (CHANGE THIS!)" Target="JWT_SECRET_KEY" Default="PLEASE_CHANGE_ME" Mode="" Description="For security reasons, it is mandatory to change the JWT Secret! Preferably use a secure random key generator for that." Display="always" Required="true" Mask="false">PLEASE_CHANGE_ME</Config>
 </Container>

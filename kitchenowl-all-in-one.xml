@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container version="2">
+<Name>KitchenOwl-All-in-one</Name>
+<Overview>Kitchenowl Front and Backend combined. KitchenOwl is a self-hosted grocery list and recipe manager. The backend is made with Flask and the frontend with Flutter. Easily add items to your shopping list before you go shopping. You can also create recipes and add items based on what you want to cook.</Overview>
+<Date>2023-11-14</Date>
+<Changes>
+## 14.11.2023
+- initial Beta Release
+## 01.06.24
+- Switch from Tinker-DIND-Solution to official Aio support.
+</Changes>
+<Registry>https://hub.docker.com/r/tombursch/kitchenowl</Registry>
+<Repository>tombursch/kitchenowl</Repository>
+<Project>https://tombursch.github.io/kitchenowl/</Project>
+<Privileged>true</Privileged>
+<Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
+<Network default="host">bridge</Network>
+<ExtraParams></ExtraParams>
+<WebUI>http://[IP]:[PORT:8123]/</WebUI>
+<Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/kitchenowl/assets/icon/icon.png</Icon>
+<Category>Productivity: Status:Beta</Category>
+<Config Type="Path" Name="Path /data" Target="/data" Default="/mnt/user/appdata/kitchenowl" Mode="rw" Description="This is where the KitchenOwl Data is stored." Required="true">/mnt/user/appdata/kitchenowl</Config>
+<Config Type="Port" Name="KitchenOwl UI" Target="80" Default="8123" Mode="tcp" Description="KitchenOwl UI Port" Display="always" Required="true">8123</Config>
+<Config Type="Variable" Name="JWT Secret (CHANGE THIS!)" Target="JWT_SECRET_KEY" Default="PLEASE_CHANGE_ME" Mode="" Description="For security reasons, it is mandatory to change the JWT Secret! Preferably use a secure random key generator for that." Display="always" Required="true" Mask="false">PLEASE_CHANGE_ME</Config>
+</Container>

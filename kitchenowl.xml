@@ -6,6 +6,8 @@
 <Changes>
 ## 28.01.2021
 - added Project link and config entry for connecting to kitchenowl-web (now working!)
+## 01.06.24
+- Update requirements
 </Changes>
 <Registry>https://hub.docker.com/r/tombursch/kitchenowl</Registry>
 <Repository>tombursch/kitchenowl</Repository>
@@ -13,9 +15,10 @@
 <Privileged>false</Privileged>
 <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
 <Network default="host">bridge</Network>
-<Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/assets/icon/icon.png</Icon>
+<Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/kitchenowl/assets/icon/icon.png</Icon>
 <Category>Productivity: Status:Stable</Category>
 <Config Type="Path" Name="Path /data" Target="/data" Default="/mnt/user/appdata/kitchenowl" Mode="rw" Description="This is where the KitchenOwl Database is stored." Required="true">/mnt/user/appdata/kitchenowl</Config>
 <Config Type="Port" Name="KitchenOwl Service" Target="5000" Default="5000" Mode="tcp" Description="KitchenOwl Service Port" Display="always" Required="true">5000</Config>
 <Config Type="Variable" Name="Url for the Web Frontend (needs kitchenowl-web container)" Target="FRONT_URL" Default="http://localhost:8123" Mode="" Description="Url for the Web Frontend (needs additional kitchenowl-web container)" Display="advanced" Required="false" Mask="false">http://localhost:8123</Config>
+<Config Type="Variable" Name="JWT Secret (CHANGE THIS!)" Target="JWT_SECRET_KEY" Default="PLEASE_CHANGE_ME" Mode="" Description="For security reasons, it is mandatory to change the JWT Secret! Preferably use a secure random key generator for that." Display="always" Required="true" Mask="false">PLEASE_CHANGE_ME</Config>
 </Container>
