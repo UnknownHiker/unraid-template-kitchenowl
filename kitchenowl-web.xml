@@ -15,7 +15,7 @@
 <Privileged>false</Privileged>
 <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
 <Network default="host">bridge</Network>
-<WebUI>http://[IP]:[PORT:8123]/</WebUI>
+<WebUI>http://[IP]:[PORT:8080]/</WebUI>
 <Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/kitchenowl/assets/icon/icon.png</Icon>
 <Category>Productivity: Status:Stable</Category>
 <Config Type="Port" Name="KitchenOwl UI" Target="8080" Default="8123" Mode="tcp" Description="KitchenOwl UI Port" Display="always" Required="true">8123</Config>
