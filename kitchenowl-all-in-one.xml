@@ -12,7 +12,7 @@
 <Registry>https://hub.docker.com/r/tombursch/kitchenowl</Registry>
 <Repository>tombursch/kitchenowl</Repository>
 <Project>https://tombursch.github.io/kitchenowl/</Project>
-<Privileged>true</Privileged>
+<Privileged>false</Privileged>
 <Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
 <Network default="host">bridge</Network>
 <ExtraParams></ExtraParams>
