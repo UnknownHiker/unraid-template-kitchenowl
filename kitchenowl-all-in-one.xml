@@ -20,6 +20,6 @@
 <Icon>https://raw.githubusercontent.com/TomBursch/kitchenowl/main/kitchenowl/assets/icon/icon.png</Icon>
 <Category>Productivity: Status:Beta</Category>
 <Config Type="Path" Name="Path /data" Target="/data" Default="/mnt/user/appdata/kitchenowl" Mode="rw" Description="This is where the KitchenOwl Data is stored." Required="true">/mnt/user/appdata/kitchenowl</Config>
-<Config Type="Port" Name="KitchenOwl UI" Target="80" Default="8123" Mode="tcp" Description="KitchenOwl UI Port" Display="always" Required="true">8123</Config>
+<Config Type="Port" Name="KitchenOwl UI" Target="8080" Default="8123" Mode="tcp" Description="KitchenOwl UI Port" Display="always" Required="true">8123</Config>
 <Config Type="Variable" Name="JWT Secret (CHANGE THIS!)" Target="JWT_SECRET_KEY" Default="PLEASE_CHANGE_ME" Mode="" Description="For security reasons, it is mandatory to change the JWT Secret! Preferably use a secure random key generator for that." Display="always" Required="true" Mask="false">PLEASE_CHANGE_ME</Config>
 </Container>
