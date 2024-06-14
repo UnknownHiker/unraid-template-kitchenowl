@@ -1,4 +1,4 @@
-# unraid_templates
+# HanSolo97's Unraid Templates
 This is an Unraid Docker Templates Collection.
 
 # TOC
