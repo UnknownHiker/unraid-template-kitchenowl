@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container version="2">
+<Name>SimpleX SMP</Name>
+<Overview>Provides the offical message queue server for SimpleX Chat</Overview>
+<Date>2024-06-14</Date>
+<Changes>
+## 14.06.2024
+- initial Release
+</Changes>
+<Registry>https://hub.docker.com/r/simplexchat/smp-server</Registry>
+<Repository>simplexchat/smp-server</Repository>
+<Project>https://simplex.chat/</Project>
+<Privileged>false</Privileged>
+<Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
+<Network default="host">bridge</Network>
+<ExtraParams></ExtraParams>
+<WebUI></WebUI>
+<Icon>https://avatars.githubusercontent.com/u/59927747?s=200&v=4.png</Icon>
+<Category>Productivity: Status:Beta</Category>
+<Config Type="Path" Name="Path SMP Config" Target="/etc/opt/simplex" Default="/mnt/user/appdata/simplex/smp/config" Mode="rw,shared" Description="This is where the SimpleX SMP Config is stored" Required="true">/mnt/user/appdata/simplex/smp/config</Config>
+<Config Type="Path" Name="Path SMP Logs" Target="/var/opt/simplex" Default="/mnt/user/appdata/simplex/smp/logs" Mode="rw,shared" Description="This is where the SimpleX SMP Logs are stored" Required="true">/mnt/user/appdata/simplex/smp/logs</Config>
+<Config Type="Port" Name="SimpleX SMP Port" Target="5223" Default="5223" Mode="tcp" Description="SimpleX SMP Service Port" Display="always" Required="true">5223</Config>
+<Config Type="Variable" Name="IP / Domain" Target="ADDR" Default="your_ip_or_domain" Description="Enter the IP or Domain your Simplex SMP should run on." Display="always" Required="true" Mask="false">your_ip_or_domain</Config>
+<Config Type="Variable" Name="Password" Target="PASS" Default="change_me" Description="Protect your SimpleX SMP with a password." Display="always" Required="false" Mask="false">change_me</Config>
+</Container>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container version="2">
+<Name>SimpleX XFTP</Name>
+<Overview>Provides the offical XFTP server for SimpleX Chat.</Overview>
+<Date>2024-06-14</Date>
+<Changes>
+## 14.06.2024
+- initial Release
+</Changes>
+<Registry>https://hub.docker.com/r/simplexchat/xftp-server</Registry>
+<Repository>simplexchat/xftp-server</Repository>
+<Project>https://simplex.chat/</Project>
+<Privileged>false</Privileged>
+<Support>https://codeberg.org/HanSolo97/unraid-template-kitchenowl/</Support>
+<Network default="host">bridge</Network>
+<ExtraParams></ExtraParams>
+<WebUI></WebUI>
+<Icon>https://avatars.githubusercontent.com/u/59927747?s=200&v=4.png</Icon>
+<Category>Productivity: Status:Beta</Category>
+<Config Type="Path" Name="Path XFTP Config" Target="/etc/opt/simplex-xftp" Default="/mnt/user/appdata/simplex/xftp/config" Mode="rw,shared" Description="This is where the SimpleX XFTP Config is stored" Required="true">/mnt/user/appdata/simplex/xftp/config</Config>
+<Config Type="Path" Name="Path XFTP Logs" Target="/var/opt/simplex-xftp" Default="/mnt/user/appdata/simplex/xftp/logs" Mode="rw,shared" Description="This is where the SimpleX XFTP Logs are stored" Required="true">/mnt/user/appdata/simplex/xftp/logs</Config>
+<Config Type="Path" Name="Path XFTP Files" Target="/srv/xftp" Default="/mnt/user/appdata/simplex/xftp/files" Mode="rw,shared" Description="This is where the SimpleX XFTP Files are stored" Required="true">/mnt/user/appdata/simplex/xftp/files</Config>
+<Config Type="Port" Name="SimpleX XFTP Port" Target="443" Default="4443" Mode="tcp" Description="SimpleX XFTP Service Port" Display="always" Required="true">4443</Config>
+<Config Type="Variable" Name="IP / Domain" Target="ADDR" Default="localhost" Description="Enter the IP or Domain your Simplex XFTP should run on." Display="always" Required="true" Mask="false">localhost</Config>
+<Config Type="Variable" Name="Quota" Target="QUOTA" Default="1gb" Description="Set maximum storage to be used by SimpleX XFTP" Display="always" Required="true" Mask="false">1gb</Config>
+</Container>
