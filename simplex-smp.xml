@@ -15,7 +15,7 @@
 <Network default="host">bridge</Network>
 <ExtraParams></ExtraParams>
 <WebUI></WebUI>
-<Icon>https://avatars.githubusercontent.com/u/59927747?s=200&v=4.png</Icon>
+<Icon>https://avatars.githubusercontent.com/u/59927747?s=200&amp;amp;v=4.png</Icon>
 <Category>Productivity: Status:Beta</Category>
 <Config Type="Path" Name="Path SMP Config" Target="/etc/opt/simplex" Default="/mnt/user/appdata/simplex/smp/config" Mode="rw,shared" Description="This is where the SimpleX SMP Config is stored" Required="true">/mnt/user/appdata/simplex/smp/config</Config>
 <Config Type="Path" Name="Path SMP Logs" Target="/var/opt/simplex" Default="/mnt/user/appdata/simplex/smp/logs" Mode="rw,shared" Description="This is where the SimpleX SMP Logs are stored" Required="true">/mnt/user/appdata/simplex/smp/logs</Config>

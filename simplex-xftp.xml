@@ -15,7 +15,7 @@
 <Network default="host">bridge</Network>
 <ExtraParams></ExtraParams>
 <WebUI></WebUI>
-<Icon>https://avatars.githubusercontent.com/u/59927747?s=200&v=4.png</Icon>
+<Icon>https://avatars.githubusercontent.com/u/59927747?s=200&amp;amp;v=4.png</Icon>
 <Category>Productivity: Status:Beta</Category>
 <Config Type="Path" Name="Path XFTP Config" Target="/etc/opt/simplex-xftp" Default="/mnt/user/appdata/simplex/xftp/config" Mode="rw,shared" Description="This is where the SimpleX XFTP Config is stored" Required="true">/mnt/user/appdata/simplex/xftp/config</Config>
 <Config Type="Path" Name="Path XFTP Logs" Target="/var/opt/simplex-xftp" Default="/mnt/user/appdata/simplex/xftp/logs" Mode="rw,shared" Description="This is where the SimpleX XFTP Logs are stored" Required="true">/mnt/user/appdata/simplex/xftp/logs</Config>
