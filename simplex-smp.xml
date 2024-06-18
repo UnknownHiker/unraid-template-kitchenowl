@@ -20,6 +20,7 @@
 <Config Type="Path" Name="Path SMP Config" Target="/etc/opt/simplex" Default="/mnt/user/appdata/simplex/smp/config" Mode="rw,shared" Description="This is where the SimpleX SMP Config is stored" Required="true">/mnt/user/appdata/simplex/smp/config</Config>
 <Config Type="Path" Name="Path SMP Logs" Target="/var/opt/simplex" Default="/mnt/user/appdata/simplex/smp/logs" Mode="rw,shared" Description="This is where the SimpleX SMP Logs are stored" Required="true">/mnt/user/appdata/simplex/smp/logs</Config>
 <Config Type="Port" Name="SimpleX SMP Port" Target="5223" Default="5223" Mode="tcp" Description="SimpleX SMP Service Port" Display="always" Required="true">5223</Config>
+<Config Type="Port" Name="SimpleX Infopage Port" Target="8000" Default="8181" Mode="tcp" Description="SimpleX SMP Service Port" Display="always" Required="false">8181</Config>
 <Config Type="Variable" Name="IP / Domain" Target="ADDR" Default="your_ip_or_domain" Description="Enter the IP or Domain your Simplex SMP should run on." Display="always" Required="true" Mask="false">your_ip_or_domain</Config>
 <Config Type="Variable" Name="Password" Target="PASS" Default="change_me" Description="Protect your SimpleX SMP with a password." Display="always" Required="false" Mask="false">change_me</Config>
 </Container>
